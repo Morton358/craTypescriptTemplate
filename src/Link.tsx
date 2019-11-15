@@ -1,27 +1,14 @@
-/*===================
-  Link.tsx
- ===================*/
-
 import React from 'react';
 
 interface LinkProps {
-    className?: string;
-    href: string;
+  className?: string;
+  href: string;
 }
 
-const Link: React.FC<LinkProps> = ({
-    className,
-    href,
-    children
-}) => {
-    return (
-        <a
-            href={href}
-            className={className}
-        >
-            {children}
-        </a>
-    );
-}
+const Link: React.FC<LinkProps> = ({ className, href, children }) => (
+  <a href={href} className={className}>
+    {children}
+  </a>
+);
 
 export default Link;
