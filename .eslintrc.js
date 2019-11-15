@@ -1,7 +1,6 @@
 module.exports = {
   env: {
     browser: true,
-    es6: true,
     jest: true,
     worker: true,
     serviceworker: true,
@@ -55,10 +54,10 @@ module.exports = {
     'eol-last': [2, 'always'],
     'no-confusing-arrow': 0,
     'arrow-spacing': ['error', { before: true, after: true }],
-    'arrow-body-style': [2, 'as-needed'],
+    'arrow-body-style': [2, 'as-needed', { requireForBlockBody: true }],
     'no-extra-parens': [
       'warn',
-      'all',
+      'as-needed',
       {
         conditionalAssign: false,
         nestedBinaryExpressions: false,
